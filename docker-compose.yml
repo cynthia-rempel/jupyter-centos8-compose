@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+
+  jupyter.service:
+    build: ./jupyter
+    command: start-notebook.sh
+    container_name: jupyter
+    image: jupyter:test
+    ports:
+    - "8443:8443"
+
